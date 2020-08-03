@@ -15,8 +15,8 @@ const App = () => {
 		lighter: [1054, 275],
 		kickAndHat: [1330, 380],
 		punchyKick: [1709, 275],
-		kick: [1985, 1000],
-		sideStickSnare: [2756, 171]
+		sideStickSnare: [1985, 171],
+		kick: [2156, 772]
 	}
 	const [play] = useSound(soundFile, spriteMap);
 	var context = new AudioContext();
@@ -127,7 +127,7 @@ const App = () => {
 					</button>
 					<button
 						className="drum-pad"
-						onClick={() => play('kick')}
+						onClick={() => play('sideStickSnare')}
 						id="audio-player-x"
 					>
 						X
@@ -139,7 +139,7 @@ const App = () => {
 					</button>
 					<button
 						className="drum-pad"
-						onClick={() => play('sideStickSnare')}
+						onClick={() => play('kick')}
 						id="audio-player-c"
 					>
 						C
